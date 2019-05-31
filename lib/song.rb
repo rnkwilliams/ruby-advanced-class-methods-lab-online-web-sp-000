@@ -30,5 +30,6 @@ class Song
 
   def self.find_by_name(song_title) #Class Finder
     result = self.all.detect {|song| song.name == title}
+    result
   end
 end
